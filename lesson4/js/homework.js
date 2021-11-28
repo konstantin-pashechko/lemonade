@@ -14,3 +14,55 @@
 // }
 //
 // sortTheArray(["b", 6, "a", "q", 7, 2])
+
+
+
+	/*
+	** Сумма квадратов массива (reduce)
+	*/
+	// let arr = [1,33,456,986,122]
+
+	// let sumOfSquares = arr.reduce((total, item)=> total + item**2);
+
+	//console.log(sumOfSquares);
+
+
+
+	/*
+	** Преобразование массива (map)
+	*/
+	// let arr = [ 'Tanita', 'Vasyl', 'George', 'Stepan']
+
+	// let newArr = arr.map((item)=>`My name is ${item}`)
+
+	// console.log(newArr)
+
+
+
+	/*
+	** Сортировка массива
+	*/
+	let arr =["b", 6, "a", "q", 7, 2]
+
+	function sortTheArray(someArray){
+
+		let numbers = []
+		let liters = []
+
+		someArray.forEach((item)=>{
+			if(+item){
+				numbers.push(item)
+			} else {
+				liters.push(item)
+			}
+		})
+
+		liters.sort()
+		numbers.sort((a,b)=> a - b)
+
+		return numbers.concat(liters)
+	}	
+
+	console.log(sortTheArray(arr))
+
+	
