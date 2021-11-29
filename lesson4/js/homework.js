@@ -44,25 +44,29 @@
 	*/
 	let arr =["b", 6, "a", "q", 7, 2]
 
-	function sortTheArray(someArray){
+	// function sortTheArray(someArray){
 
-		let numbers = []
-		let liters = []
+	// 	let numbers = []
+	// 	let liters = []
 
-		someArray.forEach((item)=>{
-			if(+item){
-				numbers.push(item)
-			} else {
-				liters.push(item)
-			}
-		})
+	// 	someArray.forEach((item)=>{
+	// 		if(+item){
+	// 			numbers.push(item)
+	// 		} else {
+	// 			liters.push(item)
+	// 		}
+	// 	})
 
-		liters.sort()
-		numbers.sort((a,b)=> a - b)
+	// 	liters.sort()
+	// 	numbers.sort((a,b)=> a - b)
 
-		return numbers.concat(liters)
-	}	
+	// 	return numbers.concat(liters)
+	// }	
 
-	console.log(sortTheArray(arr))
+	Array.prototype.range = function (){
+		return this.reduce(function (total, item) { +item ? total.unshift(item) : total.push(item); return total}, []).sort();	
+	}
+
+	console.log(arr.range());
 
 	
