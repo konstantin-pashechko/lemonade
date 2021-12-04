@@ -126,7 +126,6 @@ let res
 //         lastName,
 //     })
 // }
-
 // createObject('Vasya','Pupkin')
 
 // function getDestructurization({firstName,lastName},param=10){

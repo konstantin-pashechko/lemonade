@@ -94,6 +94,7 @@ const arrStr = ['', 'Zlata', 'Hello', 'Sergei', 'Cookie', 'Song']
 
 // let temp,
 //     bool
+
 // function sortBubble(arr) {
 //     for (let i = 0; i < arr.length-1; i++) {
 //         bool=false
@@ -211,7 +212,8 @@ const arrStr = ['', 'Zlata', 'Hello', 'Sergei', 'Cookie', 'Song']
 //         description: 'This is unit description'
 //     },
 // ]
-//
+
+
 // const german = ['Volkswagen','BMW']
 // const france = ['Citroen']
 //
