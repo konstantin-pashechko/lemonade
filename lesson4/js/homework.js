@@ -1,3 +1,4 @@
+'use strict'
 //1
 //let arr = [1,33,456,986,122]
 //найти суму квадратов всех значений масива (reduce)
@@ -97,13 +98,12 @@ let arr = ["b", 6, "a", "q", 7, 2]
 		let tmp = arr[a]
 		arr[a] = arr[b]
 		arr[b] = tmp
-		return true
 	}
 
 	let range = (arr)=>{
 
-		for(i = 0; i < arr.length; i++){
-			for(j = 0; j < arr.length - i; j++){
+		for(let i = 0; i < arr.length; i++){
+			for(let j = 0; j < arr.length - i; j++){
 				if(arr[j] > arr[j+1]){
 					cmp(j,j+1,arr)
 				}
@@ -128,9 +128,6 @@ let arr = ["b", 6, "a", "q", 7, 2]
 
 		return numbers.concat(liters)
 	}
-
-
-
 
 
 	
