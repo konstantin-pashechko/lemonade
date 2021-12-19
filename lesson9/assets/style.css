@@ -1,0 +1,86 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Arial';
+	background: #282c34;
+}
+input {
+	height: 20px;
+}
+#submit {
+	height: 1.8em;
+}
+#post-title,#lastname {
+	outline: none !important;
+	background: #eee;
+}
+#post-title:focus,#lastname:focus {
+    outline: none !important;
+    border:2px solid #900;
+  }
+.wrapper {
+	margin: 10vh 35vw;
+	min-width: 30vw;
+	min-height: 75vh;
+	border: 1px solid grey;
+	display: flex;
+	flex-direction: column;
+	background: #282c34;
+}
+.form {
+	margin: 20px auto;
+}
+#submit {
+	cursor: pointer;
+}
+.list {
+	margin: 0 3vw;
+	padding: 5px;
+}
+.header {
+	margin: 0 3vw;
+	padding: 5px;
+	font-size: 140%;
+	border-bottom: 5px solid #282c34;
+}
+.header .post-title {
+	background: #282c34;
+	color: #61AFEF;
+}
+.header, .post {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.post {
+	border-bottom: 3px solid #282c34;
+}
+.post-title {
+	flex-grow: 1;
+	margin-right: 5px;
+	padding-left: 5px;
+	background: #ABB2BF;
+	height: 100%;
+}
+
+.del {
+	background: #E06C75;
+	cursor: pointer;
+}
+.sorty {
+	background: #61AFEF;
+	cursor: pointer;
+}
+
+.button {
+	font-size: 1em;
+	min-width: 2vw;
+	text-align: center;
+	font-weight: bold;
+}
+.button:active {
+	margin-top: 2px;
+	margin-bottom: -2px;
+}

@@ -9,8 +9,6 @@ let company = {
 }
 
 
-
-
 // function sumSalaries(department) {
 //     let obj ={}
 //     if (Array.isArray(department)) {
@@ -24,7 +22,6 @@ let company = {
 //             return {
 //                 ...acc,
 //                 [cur.name]:sum?sum:cur.salary
-
 //             }
 //         },{});
 //     } else {
