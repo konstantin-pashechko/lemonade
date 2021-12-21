@@ -6,22 +6,24 @@ body {
 	font-family: 'Arial';
 	background: #282c34;
 }
-input {
+input,button {
 	height: 20px;
+	box-sizing: border-box;
+	border: none;
 }
 #submit {
 	height: 1.8em;
 }
-#post-title,#lastname {
+#post-title,#lastname,#name {
 	outline: none !important;
 	background: #eee;
 }
-#post-title:focus,#lastname:focus {
+input:focus {
     outline: none !important;
-    border:2px solid #900;
+    border:1px solid #900;
   }
 .wrapper {
-	margin: 10vh 35vw;
+	margin: 10vh 25vw;
 	min-width: 30vw;
 	min-height: 75vh;
 	border: 1px solid grey;
@@ -30,13 +32,25 @@ input {
 	background: #282c34;
 }
 .form {
+	margin: 3px auto;
+}
+.search {
 	margin: 20px auto;
 }
-#submit {
+.title {
+	margin: 1.5vw 0 0 1.5vw;
+	text-align: left;
+	color: #E06C75;
+	border-bottom: 1px solid #E06C75;
+	width: 100%;
+}
+button {
 	cursor: pointer;
+	min-width: 2.5vw;
+	border-radius: 2px;
 }
 .list {
-	margin: 0 3vw;
+	margin: 0 5vw;
 	padding: 5px;
 }
 .header {
@@ -54,10 +68,23 @@ input {
 	justify-content: space-between;
 	align-items: center;
 }
-.post {
+.user {
+	display: flex;
+	justify-content: space-between;
 	border-bottom: 3px solid #282c34;
+	cursor: default;
 }
-.post-title {
+.user > div {
+	color: #ABB2BF;
+	flex-grow: 1;
+}
+.user:hover div {
+	color: #E06C75;
+}
+.user > button {
+	margin: 0 2px;
+}
+.user-title {
 	flex-grow: 1;
 	margin-right: 5px;
 	padding-left: 5px;
@@ -69,18 +96,22 @@ input {
 	background: #E06C75;
 	cursor: pointer;
 }
-.sorty {
+.swp {
 	background: #61AFEF;
-	cursor: pointer;
 }
 
-.button {
+input {
 	font-size: 1em;
 	min-width: 2vw;
-	text-align: center;
+	text-align: left;
+	padding-left: 1em;
 	font-weight: bold;
 }
-.button:active {
+.del:active {
 	margin-top: 2px;
 	margin-bottom: -2px;
+}
+.swp:active {
+	margin-top: -2px;
+	margin-bottom: 2px;
 }
