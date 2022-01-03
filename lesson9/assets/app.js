@@ -20,8 +20,25 @@ function handleInputEvent(e){
     //3. if input
 }
 
+async function handleEvent(e){
+    await addNewUser()
+    handleEvent22()
+}
 
-function handleEvent(e) {
+async function addNewUser(){
+    try {
+        let resp = await fetch(`${BASE_URL}/posts/${id}`, {
+            method: 'delete'
+        })
+        if (resp.status === 200 || resp.status === 'Ok') {
+            nodeElem.remove()
+        }
+    } catch (e) {
+        console.log(e.message)
+    }
+}
+
+function handleEvent22(e) {
     let parentElem = e.target.closest('.post')
     let id = parentElem.dataset.id
     if (e.target.className === 'del-btn') {
