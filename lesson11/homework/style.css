@@ -1,0 +1,13 @@
+#box {
+	display: flex;
+	flex-wrap: wrap;
+	width: 300px;
+	border: 1px solid grey;
+}
+.cell {
+	width: 100px;
+	height: 100px;
+	border: 1px solid grey;
+	box-sizing: border-box;
+	cursor: pointer;
+}
