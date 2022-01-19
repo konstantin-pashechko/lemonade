@@ -1,6 +1,6 @@
+'use strict'
 
-
-(function initGame(){
+function initGame(){
 	let box = document.querySelector('#box');
 	let gamer1 = [];
 	let gamer2 = [];
@@ -22,7 +22,7 @@
 			(Object.values(cols).includes(3)) ||
 			(rows[0] == cols[0] && rows[1] == cols[1] && rows[2] == cols[2])
 		){
-			console.log(`${name} winner!`)
+			box.append(`${name} is Winner!`)
 		}
 	}
 /*Конструктор для ячейки*/
@@ -36,12 +36,12 @@
 					node.innerHTML = 'X'
 					this.val = 'X'
 					gamer1.push(this)
-					checkWin(gamer1,'gamer1')
+					checkWin(gamer1,'X')
 				} else {
 					node.innerHTML = '0'
 					this.val = '0'
 					gamer2.push(this)
-					checkWin(gamer2,'gamer2')
+					checkWin(gamer2,'0')
 				}
 				counter++;				
 			}
@@ -64,6 +64,6 @@
 			}
 		}		
 	})()
-})()
+}
 
-//initGame()
+initGame()
